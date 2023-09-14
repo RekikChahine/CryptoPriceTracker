@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Set background to white */
+    color: #333; /* Set text color to dark gray */
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #008080; /* Set link color to teal */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00a2a2; /* Change link color to a lighter teal on hover */
+  }
