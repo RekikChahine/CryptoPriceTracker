@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css'; // Embedded CSS
 import CryptoList from './components/cryptolist'
+import NavBar from './components/navbar';
 
 function App() {
   const [cryptoData, setCryptoData] = useState([]);
@@ -19,10 +20,21 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <>
+    <NavBar/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <div className="App text-center font-sans p-4">
+      {/* <BasicTable cryptoData={cryptoData}/>
+      {loading && <p>Loading...</p>} */}
       <CryptoList cryptoData={cryptoData} />
       {loading && <p>Loading...</p>}
     </div>
+
+    </>
+
   );
 }
 
